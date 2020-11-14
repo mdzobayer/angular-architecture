@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: 'todos',
     component: TodosComponent
-  }
+  },
+  { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) }
 ];
 
 @NgModule({

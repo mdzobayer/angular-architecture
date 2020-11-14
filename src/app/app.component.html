@@ -1,3 +1,22 @@
-<h1>Angular Architecture</h1>
+<!-- <h1>Angular Architecture</h1>
+
+<ul>
+    <li routerLink="todos">Todos</li>
+    <li routerLink="users">Users</li>
+</ul> -->
+
+<mat-toolbar color="primary">
+    <span class="title" [routerLink]="['/']">{{title}}</span>
+    <span class="spacer"></span>
+
+    <div>
+        <button mat-button [routerLink]="['/']">Home</button>
+        <button mat-button [routerLink]="['/todos']">Todos</button>
+        <button mat-button [routerLink]="['/users']">User</button>
+    </div>
+</mat-toolbar>
+
+<app-my-counter></app-my-counter>
+<!-- <lib-ng-shared></lib-ng-shared> -->
 
 <router-outlet></router-outlet>
